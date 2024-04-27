@@ -6,8 +6,8 @@ COPY . .
 
 RUN go build -o main main.go
 
-EXPOSE 8080
+EXPOSE 9090
 
-ENV PORT="8080"
+ENV PORT="9090"
 
 CMD ["./main"]
