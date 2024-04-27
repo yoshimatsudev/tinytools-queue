@@ -10,4 +10,7 @@ RUN go build -o main main.go
 
 EXPOSE 9090
 
-CMD ["./main"]
+ENV HOST=0.0.0.0
+ENV PORT=9090
+
+ENTRYPOINT ["./main"]
